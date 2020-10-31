@@ -1,4 +1,84 @@
-# Getting Started with Create React App
+## Project structure
+
+#### Components Structure
+
+    Body
+      |
+      |
+      |----> Login
+      |
+      |
+      |----> SideBar
+      |        |
+      |        |----> sidebar header
+      |        |          |
+      |        |          |
+      |        |          |----> header left (avatar)
+      |        |          |----> header left
+      |        |
+      |        |
+      |        |----> Search box
+      |        |
+      |        |
+      |        |----> chats (group name, contacts name)
+      |                     |
+      |                     |----> chatAvatar
+      |                     |----> chatInfo
+      |
+      |
+      |----> ChatComponent
+      |         |
+      |         |
+      |         |----> chatComponent__header
+      |         |           |
+      |         |           |----> chatComponent__headerAvatar
+      |         |           |----> chatComponent__headerInfo
+      |         |           |----> chatComponent__headerIcons
+      |         |
+      |         |
+      |         |----> chatComponent__body
+      |         |           |
+      |         |           |----> chat__messages
+      |         |           |           |
+      |         |                       |
+      |         |             (element in per message)
+      |         |                       |
+      |         |                       |----> chat_name
+      |         |                       |----> chat__message
+      |         |                       |----> chat__timestamp
+      |         |                       |
+      |         |
+      |         |
+      |         |----> chatComponent__inputField
+      |         |           |
+      |         |           |----> iconLeft  (Emoji selector)
+      |         |           |----> searchBar (message typer box)
+      |         |           |----> iconRight (voice message)
+      |
+      |
+      |
+      |
+      |
+      |
+
+## Technology Used
+
+###### MERN
+
+        M : Mongoose   (for database)
+        E : Express    (for  creating server)
+        R : React      (for frontend stuff)
+        N : Node       (for backend stuff)
+
+    1. For Frontend
+      a. Reactjs      (https://reactjs.org/)
+      b. Firebase     (for authentication and hosting purpose)  (https://console.firebase.google.com)
+      c. Material UI  (for beautiful icons)  (https://material-ui.com/)
+
+    2. For Backend
+      a. Expressjs             (npm install express)
+      b. MongoDB as a database  (https://cloud.mongodb.com/)
+      c. Reactjs                (https://nodejs.org/en/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,23 +88,23 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
@@ -47,24 +127,24 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
