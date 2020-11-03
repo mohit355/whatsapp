@@ -63,22 +63,15 @@
 
 ## Technology Used
 
-###### MERN
+###### TECH STACK
 
-        M : Mongoose   (for database)
-        E : Express    (for  creating server)
-        R : React      (for frontend stuff)
-        N : Node       (for backend stuff)
-
-    1. For Frontend
       a. Reactjs      (https://reactjs.org/)
       b. Firebase     (for authentication and hosting purpose)  (https://console.firebase.google.com)
       c. Material UI  (for beautiful icons)  (https://material-ui.com/)
 
-    2. For Backend
-      a. Expressjs             (npm install express)
-      b. MongoDB as a database  (https://cloud.mongodb.com/)
-      c. Reactjs                (https://nodejs.org/en/)
+###### npm install @material-ui/core
+
+###### npm install @material-ui/icons
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

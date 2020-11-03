@@ -1,10 +1,13 @@
 import "./App.css";
-
+import Sidebar from "./Sidebar";
 function App() {
   return (
     <div className="app">
       <div className="app__body">
-        <h1>BUILDING WHTAPP CLONE</h1>
+        {/* SideBar */}
+        {/* Chat */}
+
+        <Sidebar />
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+.sidebarChat {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid green;
+}
+.sidebarChat:hover {
+  background-color: gainsboro;
+}
+
+.sidebarChat__info {
+  margin-left: 10px;
+}
+.sidebarChat__info > h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
