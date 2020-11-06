@@ -1,11 +1,28 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// import firebase from "firebase/app";
+import firebase from "firebase";
+// import "firebase/auth";
+// import "firebase/firestore";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDAfeTQAAGwQOZ_wUzZe0vxCehNHMmNrH0",
-  authDomain: "whatsapp-chitchat.firebaseapp.com",
-  databaseURL: "https://whatsapp-chitchat.firebaseio.com",
-  projectId: "whatsapp-chitchat",
-  storageBucket: "whatsapp-chitchat.appspot.com",
-  messagingSenderId: "645675905049",
-  appId: "1:645675905049:web:364e3bc847b5a5a8637a88",
-  measurementId: "G-0M1CL01KMC",
+  apiKey: "AIzaSyBeNIKVq2XrOvvq2pmwxWDSrlwKfOB7WUg",
+  authDomain: "whatsapp-chitchats.firebaseapp.com",
+  databaseURL: "https://whatsapp-chitchats.firebaseio.com",
+  projectId: "whatsapp-chitchats",
+  storageBucket: "whatsapp-chitchats.appspot.com",
+  messagingSenderId: "874222767820",
+  appId: "1:874222767820:web:8ee685e3171e923d443c69",
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+// const db = firebase.firestore();
+// window.firestore = firestore;
+// const auth = firebase.auth();
+
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
+
+const provider = new firebase.auth.GoogleAuthProvider();
+
+export { auth, provider };
+export default db;
