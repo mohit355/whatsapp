@@ -57,4 +57,5 @@
   border-top: 3px solid green;
   flex: 1;
   overflow: scroll;
+  /* overflow-x: scroll; */
 }

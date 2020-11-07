@@ -7,9 +7,11 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import "./Sidebar.css";
 import SidebarChat from "./SidebarChat";
 import db from "./firebase";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
+  const [{ user }, dispatch] = useStateValue();
 
   //for geeting relatime data from database
   //run once when ever sidebar component render ()
@@ -33,7 +35,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <IconButton>
-          <Avatar />
+          <Avatar src={user?.photoURL} />
         </IconButton>
         <div className="sidebar__headerRight">
           <IconButton>
